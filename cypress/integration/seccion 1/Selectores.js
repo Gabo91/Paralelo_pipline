@@ -31,7 +31,7 @@ describe("Typos de Selectores ", ()=>{
      cy.wait(1000)
      cy.get(".custom-control-label").contains("Other").click()
    })
-   it.only("Selectores por Selector",()=>{
+   it("Selectores por Selector",()=>{
       cy.visit("https://demoqa.com/automation-practice-form") 
       cy.title("ToolsQA").should('eq','ToolsQA')
       cy.wait(1000)

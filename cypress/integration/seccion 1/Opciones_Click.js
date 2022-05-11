@@ -28,7 +28,7 @@ describe("Opciones de Clic", ()=>{
       cy.wait(1000)
       cy.get("#menu_pim_viewPimModule > b").should("be.visible").click({force: true})
    })
-   it.only("Clic por coordenadas",()=>{
+   it("Clic por coordenadas",()=>{
       cy.visit("https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials") 
       cy.title("OrangeHRM").should('eq','OrangeHRM')
       cy.wait(1000)

@@ -25,7 +25,7 @@ describe("Ejemplo de Type pageUp, pageDown ", ()=>{
       
    })
    //Correra solo este por que tiene la funcion Only
-   it.only("Type pageDown ultimo",()=>{
+   it("Type pageDown ultimo",()=>{
       cy.visit("https://demoqa.com/")
       cy.title().should('eq', 'ToolsQA')
       cy.wait(1500)

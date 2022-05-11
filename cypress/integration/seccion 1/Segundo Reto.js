@@ -3,7 +3,7 @@
 require('cypress-plugin-tab')
  //para que funcionen los comandos
 describe("Segundo Reto", ()=>{
-    it.only("Add a new Computer",()=>{
+    it("Add a new Computer",()=>{
        cy.visit("https://computer-database.gatling.io/computers") 
        cy.title("Computers database").should('eq','Computers database')
        cy.wait(1000)

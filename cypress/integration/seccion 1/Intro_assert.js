@@ -23,6 +23,10 @@ describe("Introduccion a los assert ", ()=>{
       cy.wait(1000)
       cy.get("#userEmail").should("be.visible").should("be.enabled").type("harold.mejia@encora.com")
     })
-    
+    Cypress.on('uncaught:exception', (err, runnable) => {
+      // returning false here prevents Cypress from
+      // failing the test
+      return false
+    }) 
     
     })//cierre de describe
