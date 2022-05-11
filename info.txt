@@ -1,4 +1,4 @@
-cypress run --record --key 64d2c6bc-52fb-48c3-b78e-a662ebfb6a54
+npx cypress run --record --key 64d2c6bc-52fb-48c3-b78e-a662ebfb6a54
 // Atrapar exceptiones
 Cypress.on('uncaught:exception', (err, runnable) => {
       // returning false here prevents Cypress from
