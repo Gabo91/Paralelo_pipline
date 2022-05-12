@@ -4,9 +4,10 @@
  //npm install -D cypress-plugin-tab
  require('cypress-plugin-tab')
 describe("Ejemplo funcion Tab ", ()=>{
+  let tiempo=1500
     it("Type con Tab",()=>{
        cy.visit("https://demoqa.com/automation-practice-form") 
-       
+       cy.wait(tiempo)
        cy.get("#firstName").type("Rodrigo").tab().
        type("Villanueva").tab().
        type("harold.mejia@encora.com")
